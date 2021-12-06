@@ -10,3 +10,6 @@
 
 <h2>Topic Exchange:</h2>
 <img width="70%" src="https://user-images.githubusercontent.com/63434009/144935851-3bff472e-20de-410d-8488-212304a7c0ea.PNG"/>
+
+<h2>Header Exchange:</h2>
+<img width="70%" src="https://user-images.githubusercontent.com/63434009/144936113-05647b63-7e1e-4fb9-9cc3-6a48408be877.PNG"/>
