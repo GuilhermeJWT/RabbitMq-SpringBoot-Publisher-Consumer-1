@@ -10,6 +10,6 @@ import lombok.ToString;
 public class ModelMessage {
 
     private int id;
-    private String mame;
+    private String name;
 
 }
