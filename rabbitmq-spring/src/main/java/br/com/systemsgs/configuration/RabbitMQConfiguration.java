@@ -15,10 +15,16 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitMQConfiguration {
 
     public static final String ROUTING_A = "routing.A";
+    public static final String ROUTING_B = "routing.b";
 
     @Bean
     Queue queueA(){
         return new Queue("queue.A", false);
+    }
+
+    @Bean
+    Queue queueB(){
+        return new Queue("queue.B", false);
     }
 
     @Bean
@@ -31,6 +37,13 @@ public class RabbitMQConfiguration {
         return BindingBuilder.bind(queueA)
                 .to(exchange)
                 .with(ROUTING_A);
+    }
+
+    @Bean
+    Binding bindingB(Queue queueB, DirectExchange exchange){
+        return BindingBuilder.bind(queueB)
+                .to(exchange)
+                .with(ROUTING_B);
     }
 
     @Bean
